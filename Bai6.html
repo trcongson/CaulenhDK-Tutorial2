@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+<h2>Giải phương trình bậc 1: Ax + B = C </h2>
+<form>
+    <tr>
+        Nhập vào A:<td><input id="cka" type="number"></td>
+        Nhập vào B:<td><input id="ckb" type="number"></td>
+        Nhập vào C:<td><input id="ckc" type="number"></td>
+        <td><input type="button" value="Giải phương trình bậc 1" onclick="start()"></td>
+    </tr>
+</form>
+<div>
+    Result:<output id="output"></output>
+</div>
+<script>
+    function start() {
+        let a = document.getElementById("cka").value;
+        a = parseInt(a);
+        let b = document.getElementById("ckb").value;
+        b = parseInt(b);
+        let c = document.getElementById("ckc").value;
+        c = parseInt(c);
+        let x = (c - b) / a ;
+        document.getElementById("output").innerHTML = x;
+    }
+</script>
+</body>
+</html>

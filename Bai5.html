@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<form>
+    <tr>
+        Cạnh kề a:<td><input id="cka" type="number"></td>
+        Cạnh kề b:<td><input id="ckb" type="number"></td>
+        <td><input type="button" value="Tính diện tích" onclick="start()"></td>
+    </tr>
+</form>
+<div>
+    Result:<output id="output"></output>
+</div>
+<script>
+    function start() {
+        let a = document.getElementById("cka").value;
+        a = parseInt(a);
+        let b = document.getElementById("ckb").value;
+        b = parseInt(b);
+        let S = (a * b) / 2 ;
+        document.getElementById("output").innerHTML = S;
+    }
+</script>
+</body>
+</html>
